@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .parent{
+            overflow: hidden;
+            background-color: yellow;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            background-color: red;
+        }
+        .a{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 10px solid black;
+            padding: 20px;
+        }
+        .b{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 10px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+    <p class="a">hello</p>
+    <p class="b">hello</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+p{
+    margin: 0 20px;
+    padding: 0;
+}
+.year {
+    display: flex;
+}
+.year-text{
+    flex: 1;
+    color: brown;
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: left;
+}
+.text{
+    flex: 1;
+    padding-top: 90px;
+    color: gray;
+    font-weight: bold;
+    text-align: right;
+}
+.box{
+    display: inline-block;
+    height: 250px;
+    margin: 0 20px;
+}
+.month{
+    font-size: 30px;
+    font-weight: bold;
+}
+.day {
+    width: 40px;
+}
+.SUN, .holiday{
+    color: red;
+}
+td{
+    text-align: center;
+}

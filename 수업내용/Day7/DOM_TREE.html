@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4월 5일</title>
+    <style>
+        div:nth-child(3){color:red;}
+        span:nth-child(1){color:blue;}
+        span:nth-child(4){color:green;}
+    </style>
+</head>
+<body>
+    <h1>HELLO</h1>
+    <ul>
+        <li>List 1</li>
+        <li>List 2 <span>SPAN</span></li>
+    </ul>
+    <div class="wrap">
+        <div class="box">BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>
+    </div>
+    <span>Have a good <em></em></span>
+
+    <!-- div.wrap>div{BOX $}.box*3
+    div.wrap>div.box{BOX $}*3
+    .wrap>.box{BOX $}*3 -->
+    
+
+    <!-- <h2>DOM TREE 구조 이해하기</h2>
+
+    <h2>질문</h2>
+    <ol>
+        <li>BODY의 Child는 몇개일까요?</li>
+        <li>UL의 Child는 몇개일까요?</li>
+        <li>UL의 Decendent(자손/하위)는 몇개일까요?</li>
+        <li>div태그중에 3번째 Child인 요소는 몇개일까요?</li>
+        <li>UL의 Siblings(형제요소)는 몇개일까요?</li>
+        <li>div:nth-child(3){color:red;}하면 몇개의 div태그가 빨간글씨가 될까요?</li>
+        <li>body>span{color:blue;}하면 몇개의 span태그가 파란글씨가 될까요?</li>
+    </ol>
+    <h2>내 정답</h2>
+    <ol>
+        <li>4개</li>
+        <li>2개</li>
+        <li>3개</li>
+        <li>2개</li>
+        <li>3개</li>
+        <li>3개</li>
+        <li>1개</li>
+    </ol>
+    <h2>진짜 정답</h2>
+    <ol>
+        <li>4개(h1,ul,div.wrap,span)</li>
+        <li>2개(li,li)</li>
+        <li>3개(li,li,span)</li>
+        <li>2개(div.wrap, div.box(3번째))</li>
+        <li>3개(h1, div.wrap, span)</li>
+        <li>2개(div.wrap, div.box(3번째)/4과 같은문제/브라우저에서보면 3개 같지만 정확히는 2개)</li>
+        <li>1개(body의 child인 span)</li>
+    </ol> -->
+</body>
+</html>
