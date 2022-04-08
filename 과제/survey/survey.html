@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>survey</title>
+</head>
+<body>
+    <main>
+        <header class="box head">
+            <h1>당신이 궁금합니다!!</h1>
+            <p>얼른얼른 골라보시오~!!</p>
+        </header>
+
+        <form action="" method="get">
+            <fieldset class="box"> 
+                <legend></legend>
+                <h2>과거부터 현재까지 당신이 생각하는 최고의 메신저는?</h2>
+                
+                <!-- <label for="messenger_id1" class="label">
+                    <input type="radio" name="messenger" id="messenger_id1" value="phone" required>문자
+                </label>
+            
+                <label for="messenger_id2" class="label">
+                    <input type="radio" name="messenger" id="messenger_id2" value="buddy">버디버디
+                </label>
+            
+                <label for="messenger_id3" class="label">
+                    <input type="radio" name="messenger" id="messenger_id3" value="nateon">네이트온
+                </label>
+            
+                <label for="messenger_id4" class="label">
+                    <input type="radio" name="messenger" id="messenger_id4" value="kakaotalk">카카오톡
+                </label>
+            
+                <label for="messenger_id5" class="label">
+                    <input type="radio" name="messenger" id="messenger_id5" value="instagram">인스타그램 DM
+                </label> -->
+                
+                <div>
+                    <input type="radio" name="messenger" id="messenger_id1" value="phone" required>
+                    <label for="messenger_id1">핸드폰 문자</label>
+                </div>
+                <div>
+                    <input type="radio" name="messenger" id="messenger_id2" value="buddy">
+                    <label for="messenger_id2">버디버디</label>
+                </div>
+                <div>
+                    <input type="radio" name="messenger" id="messenger_id3" value="nateon">
+                    <label for="messenger_id3">네이트온</label>
+                </div>
+                <div>
+                    <input type="radio" name="messenger" id="messenger_id4" value="kakaotalk">
+                    <label for="messenger_id4">카카오톡</label>
+                </div>
+                <div>
+                    <input type="radio" name="messenger" id="messenger_id5" value="instagram">
+                    <label for="messenger_id5">인스타그램 DM</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <h2>라떼는 말이야~~당신의 선택은?! 다 골라봐~~</h2>
+
+                <!-- <label for="idol_id1" class="label">
+                    <input type="checkbox" name="idol" id="idol_id1" value="동방신기">동방신기
+                </label>
+
+                <label for="idol_id2" class="label">
+                    <input type="checkbox" name="idol" id="idol_id2" value="신화">신화
+                </label>
+
+                <label for="idol_id3" class="label">
+                    <input type="checkbox" name="idol" id="idol_id3" value="인피니트">인피니트
+                </label>
+                
+                <label for="idol_id4" class="label">
+                    <input type="checkbox" name="idol" id="idol_id4" value="비스트">비스트
+                </label>
+
+                <label for="idol_id5" class="label">
+                    <input type="checkbox" name="idol" id="idol_id5" value="슈퍼주니어">슈퍼주니어
+                </label>
+
+                <label for="idol_id6" class="label">
+                    <input type="checkbox" name="idol" id="idol_id6" value="BTS">BTS
+                </label>
+
+                <label for="idol_id7" class="label">
+                    <input type="checkbox" name="idol" id="idol_id7" value="SG워너비">SG워너비
+                </label> -->
+                
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id1" value="동방신기">
+                    <label for="idol_id1">동방신기</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id2" value="신화">
+                    <label for="idol_id2">신화</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id3" value="인피니트">
+                    <label for="idol_id3">인피니트</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id4" value="비스트">
+                    <label for="idol_id4">비스트</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id5" value="슈퍼주니어">
+                    <label for="idol_id5">슈퍼주니어</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id6" value="BTS">
+                    <label for="idol_id6">BTS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="idol" id="idol_id7" value="SG워너비">
+                    <label for="idol_id7">SG워너비</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <label for="reason" class="label">프론트엔드가 되고 싶은 이유는?</label>
+                <input type="text" name="reason_text" id="reason" class="input-box" placeholder="내 답변" required>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <label for="target" class="label">멋사 4개월 과정동안 당신의 목표는?</label>
+                <input type="text" name="target_name" id="target" class="input-box" placeholder="내 답변" required>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <label for="buzzword" class="label">멋사에서 가장 기억에 남은 유행어는?</label>
+                <select name="buzzword_select" id="buzzword" class="input-box" required>
+                    <option value="">선택</option>
+                    <option value="option1">행-복하다</option>
+                    <option value="option2">아기사자들</option>
+                    <option value="option3">우주에 있는거 아니죠?</option>
+                    <option value="option4">멋멘.</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <label for="timemachine" class="label">과거로 돌아갈 수 있다면 당신은 언제로 돌아갈 것인가요?</label>
+                <input type="date" name="timemachine_date" id="timemachine" class="input-box" required>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend></legend>
+                <label for="airplane" class="label">당신은 내일 제주도를 간다!! 출발하기 딱 좋은 시간은?</label>
+                <input type="time" name="airplane_time" id="airplane" class="input-box" required>
+            </fieldset>
+
+            <fieldset class="button-box">
+                <legend></legend>
+                <button type="submit">제출</button>
+            </fieldset>
+            
+            
+            
+        </form>
+
+    </main>
+</body>
+</html>

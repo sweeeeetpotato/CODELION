@@ -1,0 +1,53 @@
+body, p, h1, h2, fieldset, input, label{
+    margin: 0;
+    padding: 0;
+    font-size: initial;
+}
+
+body{
+    background-color: rgb(244, 233, 255);
+}
+main {
+    width: 35%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header.head{
+    border-top: 10px solid blueviolet;
+}
+h1 {
+    font-size: 30px;
+}
+.box{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+} 
+.button-box {
+    border: none;
+    margin: 10px;
+}
+div, p{
+    margin-top: 15px;
+}
+.input-box{
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+button{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    opacity: 0.8;
+    
+}
+button:hover{
+    opacity: 1;
+}
