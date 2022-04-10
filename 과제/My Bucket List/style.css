@@ -1,0 +1,51 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+body{
+    background-color: lightgray;
+}
+.container{
+    background-color: rgb(235, 235, 235);
+    width: 500px;
+    border-radius: 20px;
+    margin: 100px auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px 0 rgba(17, 17, 17, 0.1);
+}
+.title{
+    background-color: rgb(252, 252, 252);
+    padding: 30px 0;
+    border-bottom: 5px solid rgb(232, 232, 232);
+}
+.title h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(243, 10, 193);
+    border-left: 8px solid rgb(243, 10, 193);
+    padding: 0 20px;
+}
+section.listbox{
+    padding: 10px;
+    color: gray;
+}
+li{
+    background-color: rgb(250, 250, 250);
+    list-style-type: none;
+    border: 4px solid rgb(230, 230, 230);
+    border-radius:7px;
+    margin: 15px;
+    padding: 10px 15px;
+}
+li:hover{
+    border: 4px solid rgb(77, 124, 255);
+}
+
+
+
+
