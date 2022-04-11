@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        div {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: black;
+            border: 10px solid yellow;
+            z-index: 10;
+        }
+        img {
+            padding: 10px;
+            position: absolute;
+        }
+        img:nth-child(1){
+            background-color: red;
+            top: 100px;
+            left: 100px;
+            z-index: 0;
+        }
+        img:nth-child(2){
+            background-color: green;
+            top: 150px;
+            left: 150px;
+            /* -1, 0, 1 모두 test */
+            z-index: 0;
+        }
+        img:nth-child(3){
+            background-color: blue;
+            top: 200px;
+            left: 200px;
+            z-index: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://via.placeholder.com/300" alt="">
+        <img src="https://via.placeholder.com/400" alt="">
+        <img src="https://via.placeholder.com/500" alt="">
+    </div>
+</body>
+</html>
