@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1920px;
+    height: 963px;
+    left: 0px;
+    top: 0px;
+    background: #EAE8FE;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+.logo_box {
+    position: absolute;
+    width: 436px;
+    height: 204px;
+    left: 742px;
+    top: 0;
+}
+.logo_box .logo {
+    position: absolute;
+    width: 386px; 
+    height: 180px;
+    left: 25px;
+}
+
+.beverage_stock_box {
+    position: absolute;
+    width: 360px;
+    height: 545px;
+    left: 586px;
+    top: 247px;
+    
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+.beverage_stock_list li{
+    position: absolute;
+    width: 94px;
+    height: 130px;
+    
+    border: 1px solid #BDBDBD;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.4));
+    border-radius: 10px;   
+    list-style: none; 
+    text-align: center;
+}
+.beverage_stock_list li:nth-child(1) {
+    left: 27px;
+    bottom: 384px;
+    border: 3px solid #6327FE;
+}
+.beverage_stock_list li:nth-child(2) {
+    left: 133px;
+    bottom: 384px;  
+}
+.beverage_stock_list li:nth-child(3) {
+    left: 239px;
+    bottom: 384px;    
+}
+.beverage_stock_list li:nth-child(4) {
+    left: 27px;
+    bottom: 242px;
+}
+.beverage_stock_list li:nth-child(5) {
+    left: 133px;
+    bottom: 242px;    
+    border: 3px solid #6327FE;
+}
+.beverage_stock_list li:nth-child(6) {
+    left: 239px;
+    bottom: 242px;    
+}
+.beverage_stock_list li img {
+    position: absolute;
+    width: 36px;
+    height: 65px;
+    left: 29px;
+    top: 11px;    
+}
+.beverage_stock_list li div + div {
+    position: absolute;
+    width: 94px;
+    height: 130px;
+    top: 0;
+    left: 0;
+    
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;    
+}
+.beverage_stock_list li div>img {
+    position: absolute;
+    width: 57.51px;
+    height: 44.85px;
+    top: 40px;
+    left: 18px;
+    transform: rotate(5.15deg);
+}
+.beverage_stock_list li span {
+    position: absolute;
+    width: 73px;
+    height: 10px;
+    left: 11px;
+    top: 82px;
+    
+    font-size: 10px;
+}
+.beverage_stock_list li div {
+    position: absolute;
+    width: 70px;
+    height: 22px;
+    left: 13px;
+    top: 99px;
+
+    padding: 2px;
+    font-size: 12px;
+    background: #6327FE;
+    border-radius: 50px;    
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.current_money {
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    left: 27px;
+    bottom: 190px;
+    
+    border-radius: 5px;
+    background: #EAE8FE;
+}
+.current_money span {
+    top: 6px;    
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;    
+}
+.current_money span:nth-child(1) {
+    width: 47px;
+    left: 10px;
+}
+.current_money span:nth-child(2) {
+    width: 54px;
+    left: 136px;
+    text-align: right;
+}
+.return_money {
+    position: absolute;
+    width: 94px;
+    height: 32px;
+    left: 239px;
+    bottom: 190px;
+    
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+    border-radius: 5px;    
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.input_money input {
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    left: 27px;
+    bottom: 146px;
+    
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;    
+    font-weight: 500;
+    font-size: 13px;
+    color: #BDBDBD;
+}
+.input_money button {
+    position: absolute;
+    width: 94px;
+    height: 32px;
+    left: 239px;
+    bottom: 146px;
+    
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+    border-radius: 5px;    
+    background: #FFFFFF;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+}
+.selected_beverage_list_box {
+    position: absolute;
+    width: 200px;
+    height: 106px;
+    left: 27px;
+    bottom: 28px;    
+    
+    background: #EAE8FE;   
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.selected_beverage_list_box .scroll {
+    position: absolute;
+    width: 4px;
+    height: 79px;
+    left: 192px;
+    top: 9px;
+    
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.selected_beverage_list li {
+    position: absolute;
+    width: 170px;
+    height: 46px;
+    left: 12px;
+    top: 12px;
+
+    border-radius: 5px;
+    background: #FFFFFF;
+    list-style: none;
+}
+.selected_beverage_list li:nth-child(1){
+    left: 12px;
+    top: 12px;
+}
+.selected_beverage_list li:nth-child(2){
+    left: 12px;
+    top: 64px;
+}
+.selected_beverage_list li img {
+    position: absolute;
+    width: 18px;
+    height: 33px;
+    left: 10px;
+    top: 6px    
+}
+.selected_beverage_list li span {
+    position: absolute;
+    width: 73px;
+    height: 10px;
+    left: 38px;
+    top: 18px;
+    
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;    
+}
+.selected_beverage_list li div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 132px;
+    top: 8px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.get_beverage_button {
+    position: absolute;
+    width: 94px;
+    height: 106px;
+    left: 239px;
+    bottom: 28px;
+    
+    background: #EB5757;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;    
+    background: #6327FE;
+    color: #FFFFFF;
+    opacity: 0.9;
+    border: none;
+}
+.get_beverage_button:hover {
+    opacity: 1;
+}
+
+
+
+
+
+.my_money_box{
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    left: 974px;
+    top: 248px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.my_money {
+    position: absolute;
+    width: 306px;
+    height: 32px;
+    left: 25px;
+    top: 7px;
+    background: #EAE8FE;
+    border-radius: 5px;
+}
+.my_money span{
+    position: absolute;
+    font-size: 14px;
+    top: 6px;
+}
+.my_money span:nth-child(1){
+    width: 47px;
+    left: 10px;
+    font-weight: 500;
+}
+.my_money span:nth-child(2){
+    width: 87px;
+    left: 209px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+
+
+
+.my_beverage_box {
+    position: absolute;
+    width: 360px;
+    height: 474px;
+    left: 974px;
+    top: 318px;
+    background: #FFFFFF;
+}
+.my_beverage_box header {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    left: 145px;
+    top: 25px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+.my_beverage_box span {
+    position: absolute;
+    width: 109px;
+    height: 20px;
+    left: 224px;
+    top: 428px;
+
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+} 
+.my_beverage_box section {
+    position: absolute;
+    width: 306px;
+    height: 364px;
+    left: 27px;
+    top: 58px;
+
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #EAE8FE;
+}
+.my_beverage_box .scroll {
+    position: absolute;
+    width: 4px;
+    height: 79px;
+    left: 298px;
+    top: 9px;
+    
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.my_beverage_list li{
+    position: absolute;
+    left: 12px;
+    width: 276px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    list-style: none;
+}
+.my_beverage_list li:nth-child(1){
+    top: 12px;
+}
+.my_beverage_list li:nth-child(2){
+    top: 64px;
+}
+.my_beverage_list li:nth-child(3){
+    top: 116px;
+}
+.my_beverage_list li:nth-child(4){
+    top: 168px;
+}
+.my_beverage_list li img {
+    position: absolute;
+    width: 18px;
+    height: 33px;
+    left: 10px;
+    top: 6px;    
+}
+.my_beverage_list li span {
+    position: absolute;
+    width: 73px;
+    height: 10px;
+    left: 38px;
+    top: 18px;
+    
+    font-weight: 500;
+    font-size: 9px;
+    display: flex;
+    align-items: center;     
+}
+.my_beverage_list li div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 238px;
+    top: 8px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}    
