@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <title>스타크래프트</title>
+    <style>
+        .background {
+            position: relative;
+            background-image: url('images/background.png');
+            background-size: 500px 330px;
+            width: 500px;
+            height: 330px;
+        }
+        #drone {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 60px;
+        }
+        #bunker {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 80px;
+            right: 20px;
+        }
+        #spit {
+            display: none;
+            position: absolute;
+            top: 140px;
+            left: 150px;
+            width: 50px;
+            height: 30px;
+            z-index: 2;
+        }
+    </style> 
+</head>
+<body>
+    <h1 id='hp'>HP: 3</h1>
+    <div class='background'>
+        <img id='drone' src="images/drone.png" alt="drone">
+        <img id='spit' src="images/spit.png" alt="spit">
+        <img id='bunker' src="images/bunker.png" alt="bunker">
+    </div>
+    <script>
+        var hp =3;
+        $('#drone').click(function(){
+            console.log("침 발사");
+            $('#spit').fadeIn();
+            //css에서 px단위로 되어있으므로 여기서는 단위 생략가능...?
+            $('#spit').animate({left: '+=250'});
+            $('#spit').fadeOut(function(){
+                hp--;
+                $('#hp').text('HP: '+hp);
+                if (hp == 0){
+                    $('#bunker').fadeOut();
+                    hp++;
+                }
+            });
+            // .css는 움직임이 아니라 값을 지정해주기떄문에 -250하면 이상하게나옴.
+            $('#spit').css({left: '150px'});
+            
+        });
+    </script>
+</body>
+</html>

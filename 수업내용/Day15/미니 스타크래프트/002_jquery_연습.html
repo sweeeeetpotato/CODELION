@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>     
+</head>
+<body>
+    <h1>jQuery 이벤트</h1>
+    <button id="click1" onclick="hello1();">클릭1</button>
+    <button id="click2">클릭2</button>
+    <script>
+        function hello1() {
+            console.log('hello1');
+        }
+        function hello2() {
+            console.log('hello2');
+        }
+
+        //함수를 실행하는 것이 아니라 함수 이름만 넘겨줌
+        $('#click2').click(hello2);
+    </script>
+</body>
+</html>
