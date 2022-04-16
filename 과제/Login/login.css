@@ -1,0 +1,68 @@
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cont-login {
+    width: 350px;
+    margin: 200px auto;
+    padding: 18px 15px 17px;
+
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.cont-login .title-login {
+    font-size: 12px;
+    line-height: 15px;
+}
+.cont-login a {
+    text-decoration: none;
+    color: #767676;
+}
+
+.cont-login .link-login {
+    display: block;
+    padding: 10px 0 12px;
+    margin: 16px 0;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+    background-color: #711BFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.link-login .img-logo {
+    width: 64px;
+    margin-right: 4px;
+    vertical-align: bottom;
+}
+
+.cont-login .cont-find {
+    float: left;
+}
+.cont-find .img-find {
+    width: 16px;
+    vertical-align: bottom;
+}
+.cont-find .link-find {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.cont-login .cont-join {
+    float: right;
+}
+.cont-join .img-join {
+    width: 16px;
+    vertical-align: bottom;
+}
+.cont-join .link-join {
+    font-size: 12px;
+    line-height: 15px;
+}
