@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Selectbox</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont-dropdown_selectbox">
+
+        <button class="button-dropdown"type="button">최애 프로그래밍 언어</button>
+        
+        <ul class="list-selectbox">
+            <li><button type="button">Python</button></li>
+            <li><button type="button">Java</button></li>
+            <li><button type="button">JavaScript</button></li>
+            <li><button type="button">C</button></li>
+            <li><button type="button">C/C++</button></li>
+        </ul>
+    </div>
+
+    <script>
+        const button = document.querySelector('.button-dropdown');
+        const list = document.querySelector('.list-selectbox');
+        button.addEventListener('click', function() {
+            list.classList.toggle('show');
+            button.classList.toggle('show');
+        });
+
+        list.addEventListener('click', (event) => {
+            button.innerText = event.target.innerText;
+            list.classList.remove('show');
+            button.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

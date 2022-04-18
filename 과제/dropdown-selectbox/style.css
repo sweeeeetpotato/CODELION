@@ -1,0 +1,71 @@
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.cont-dropdown_selectbox {
+    width: 300px;
+    margin: 200px auto;
+}
+.cont-dropdown_selectbox .button-dropdown {
+    width: 200px;
+    padding: 12px 13px;
+    margin-bottom: 9px;
+    text-align: left;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+    background-image: url('images/icon-Triangle-down.png');
+    background-repeat: no-repeat;
+    background-position: 177px center;
+}        
+.cont-dropdown_selectbox .button-dropdown.show {
+    padding: 11px 13px;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    background-image: url('images/icon-Triangle-up.png');
+    border: 1px solid #9B51E0;
+    box-shadow: 0 0 0 3px #F8E4FF; 
+}
+.cont-dropdown_selectbox .list-selectbox {
+    display: none;
+}
+.cont-dropdown_selectbox .list-selectbox.show {
+    display: block;
+    width: 200px;
+    padding: 3px 0;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.list-selectbox li {
+    padding: 5px 8px;
+}
+.list-selectbox button {
+    width: 100%;
+    padding: 7px 10px;
+    text-align: left;
+    /* cursor: url('images/cursor.png'), auto; */
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+.list-selectbox button:hover {
+    background-color: #F8E4FF;
+}
