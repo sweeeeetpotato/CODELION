@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .txt-ellipsis {
+            /* 실무팁 : 말줄임 / 글자가 늘어나도 박스 사이즈의 변화를 원치 않는 디자이너를 위한 프론트엔드의 센스!!!*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .cont-select {
+            width: 200px;
+            margin: 100px auto 0;
+        }
+        .btn-select {
+            width: 100%;
+            /* 오른쪽여백에 패딩 많이 준 이유 : 말줄임이 버튼부분을 침범하지않도록 하기위해서 */
+            padding: 13px 20px 13px 14px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: left;
+            box-sizing: border-box;
+            border: 1px solid #c4c4c4;
+            border-radius: 10px;
+            cursor: pointer;
+            background: url(images/icon-Triangle-down.png) no-repeat;
+            background-position: right 14px center;
+        }
+        .btn-select:focus {
+            border: 1px solid #9B51E0;
+            outline: 3px solid #F8E4FF;
+        }
+        .btn-select.on {
+            background-image: url(images/icon-Triangle-up.png);
+        }
+        .btn-select.on + .list-member {
+            display: block;
+        }
+        .list-member {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #C4C4C4;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .list-member li {
+            padding: 5px 18px;
+        }
+        .list-member li button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #fff;
+            text-align: left;
+        }
+        /* 포커스 추가한 이유 : 탭으로 이동시에도 보임 */
+        .list-member li button:focus,
+        .list-member li button:hover {
+            background-color: #F8E4FF;
+        }
+    </style>
+</head>
+<body>
+    <article class="cont-select">
+        <h2 class="txt-hide">최애 프로그래밍언어를 선택해 주세요</h2>
+        <button type="button" class="btn-select on txt-ellipsis">최애 프로그래밍 언어</button>
+        <ul class="list-member">
+            <li><button type="button" class="txt-ellipsis">Python</button></li>
+            <li><button type="button" class="txt-ellipsis">Java</button></li>
+            <li><button type="button" class="txt-ellipsis"> JavaScript</button></li>
+            <li><button type="button" class="txt-ellipsis">C#</button></li>
+            <li><button type="button" class="txt-ellipsis">C/C++</button></li>
+        </ul>
+    </article>
+</body>
+</html>
