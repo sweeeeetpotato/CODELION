@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        article {
+            display: inline-block;
+            margin: 50px;
+            background-color: lightgrey;
+        }
+        div {
+            margin: 10px auto;
+            border: 1px solid black;
+            width: 28px;
+            height: 28px;
+        }
+        .top div{
+            background: url("images/css_sprites_1배수.png") no-repeat;
+        }
+        .top div:nth-child(1) {
+            background-position: -5px -5px;
+        }
+        .top div:nth-child(2) {
+            background-position: -5px -43px;
+        }
+        .top div:nth-child(3) {
+            background-position: -5px -81px;
+        }
+        .top div:nth-child(4) {
+            background-position: -5px -119px;
+        }
+
+        .bottom div{
+            background: url("images/css_sprites_2배수.png") no-repeat;
+            background-size: 38px 152px;
+        }
+        .bottom div:nth-child(1) {
+            background-position: -5px -5px;
+        }
+        .bottom div:nth-child(2) {
+            background-position: -5px -43px;
+        }
+        .bottom div:nth-child(3) {
+            background-position: -5px -81px;
+        }
+        .bottom div:nth-child(4) {
+            background-position: -5px -119px;
+        }
+    </style>
+</head>
+<body>
+    <article class="top">1배수
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </article>
+
+    <article class="bottom">2배수
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </article>
+</body>
+</html>
