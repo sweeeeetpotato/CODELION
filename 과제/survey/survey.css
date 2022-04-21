@@ -39,7 +39,7 @@ div, p{
     border-bottom: 1px solid gray;
     margin-top: 20px;
 }
-button{
+.button-box [class^=btn]{
     background-color: blueviolet;
     border: none;
     border-radius: 5px;
@@ -48,6 +48,9 @@ button{
     opacity: 0.8;
     
 }
-button:hover{
+.button-box button:hover{
     opacity: 1;
+}
+.button-box .btn-reset {
+    float: right;
 }
