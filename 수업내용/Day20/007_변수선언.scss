@@ -1,0 +1,15 @@
+$color1 : #000;
+$color2 : #f00;
+$색상 : #00f;
+$큰글자 : 32px;
+
+.one {
+    color: $color1;
+    font-size: $큰글자;
+}
+.two {
+    color: $color2;
+}
+.three {
+    color: $색상;
+}

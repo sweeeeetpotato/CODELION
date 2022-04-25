@@ -1,0 +1,9 @@
+.base_box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.box {
+    @extend .base_box;
+    border: 5px solid black;
+}

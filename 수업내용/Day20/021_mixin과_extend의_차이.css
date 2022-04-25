@@ -1,0 +1,23 @@
+.base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 5px solid black;
+}
+
+.base-box_, .box_ {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box_ {
+  border: 5px solid black;
+}
+/*# sourceMappingURL=021_mixin과_extend의_차이.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAC;EAED,KAAK,EADG,GAAG;CAKd;;AAND,AAGI,IAHA,CAGA,IAAI,CAAC;EACD,KAAK,EAHD,GAAG;CAIV;;AAEL,AAAA,MAAM,CAAC;EACH,KAAK,EAPG,GAAG;CAQd",
+    "sources": [
+        "011_변수_scope.scss"
+    ],
+    "names": [],
+    "file": "011_변수_scope.css"
+}
