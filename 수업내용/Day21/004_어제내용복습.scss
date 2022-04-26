@@ -1,0 +1,8 @@
+@mixin  custum-button($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 10px;
+}
+.btn {
+    @include custum-button(100px, 30px);
+}

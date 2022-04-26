@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAC;EAJD,KAAK,EAKkB,KAAK;EAJ5B,MAAM,EAIwB,IAAI;EAHlC,aAAa,EAAE,IAAI;CAItB",
+    "sources": [
+        "004_어제내용복습.scss"
+    ],
+    "names": [],
+    "file": "004_어제내용복습.css"
+}

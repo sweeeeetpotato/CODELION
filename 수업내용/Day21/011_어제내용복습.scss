@@ -1,0 +1,21 @@
+$number : 10px, 20px, 35px, 30px, 15px;
+$number2 : 10px 20px 35px 30px 15px;
+
+@function pow($value) {
+	// 실행 코드
+    $value : $value * $value + px;
+	@return $value;
+}
+.box {
+    width: pow(10);
+    height: max(10px, 20px, 35px, 30px, 15px);
+    font-size: min(10px, 20px, 35px, 30px, 15px);
+}
+.box2 {
+    width: pow(10);
+    height: min($number...);
+}
+.box3 {
+    width: pow(10);
+    height: max($number2...);
+}
