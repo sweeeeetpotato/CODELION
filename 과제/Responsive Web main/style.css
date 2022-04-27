@@ -65,6 +65,7 @@ strong {
 .section-text h1 {
 	font-size: 7rem;
 	font-weight: normal;
+	word-break: keep-all; 
 }
 
 .section-text p {
