@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- https://tailwindcss.com/docs/margin -->
+  <!-- https://tailwindcss.com/docs/padding -->
+  <!-- https://tailwindcss.com/docs/font-weight -->
+  <!-- https://tailwindcss.com/docs/text-color -->
+  <div class="text-base">hello world</div>
+  <div class="text-lg">hello world</div>
+  <div class="text-2xl">hello world</div>
+  <div class="text-4xl p-3">hello world</div>
+
+  <div class="text-9xl p-3">hello world</div>
+  <div class="text-9xl pt-5">hello world</div>
+  <div class="text-9xl">hello world</div>
+
+  <br>
+  <br>
+
+  <div class="text-base">hello world</div>
+  <div class="text-base mt-3 mb-3">hello world</div>
+  <!-- my-3에서 y는 위,아래 -->
+  <!-- mx-3에서 x는 왼쪽, 오른쪽 -->
+  <div class="text-base my-3">hello world</div>
+  <div class="text-base">hello world</div>
+
+  <br>
+  <br>
+
+  <!-- https://tailwindcss.com/docs/list-style-type -->
+  <div>
+    <ul class="list-disc list-inside">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti aut voluptatem tempore, tenetur velit modi, voluptas nulla cum laudantium exercitationem soluta. Sint perferendis incidunt deserunt aspernatur numquam eius libero!s</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+    </ul>
+  </div>
+
+  <div class="p-10">
+    <ul class="list-disc list-inside">
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+    </ul>
+  </div>
+
+  <div class="p-10">
+    <ul class="list-decimal">
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+    </ul>
+  </div>
+
+  <!-- rounded-full w24 -->
+  <!-- https://tailwindcss.com/docs/border-radius -->
+  <!-- https://tailwindcss.com/docs/border-width -->
+  <div class="w-32 h-32 bg-red-400"></div>
+  <br>
+  <div class="w-32 h-32 bg-red-400 rounded"></div>
+  <br>
+  <div class="w-32 h-32 bg-red-400 rounded-2xl"></div>
+  <br>
+  <div class="w-32 h-32 bg-red-400 rounded-full"></div>
+  <br>
+
+  <div class="border-t-4 border-red-400">hello world</div>
+  <br>
+  <div class="border-b-4 border-red-400">hello world</div>
+  <br>
+  <div class="border-l-4 border-red-400">hello world</div>
+  <br>
+  <div class="border-r-4 border-red-400">hello world</div>
+  <br>
+  <div class="border-4 border-red-400">hello world</div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- 가능은 하지만 많이 사용하는 방법은 아님 -->
+  <div class="text-[30px]">hello world</div>
+  <div class="mt-[20px]">hello world</div>
+</body>
+</html>
