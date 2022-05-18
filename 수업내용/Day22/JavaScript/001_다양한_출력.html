@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello javascript</title>
+</head>
+
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+
+    <script>
+        document.getElementById("one").innerHTML = "hello <strong>world</strong> document";
+        document.getElementById("two").innerText = "hello <strong>world</strong> document";
+        document.getElementById("three").textContent = "hello <strong>world</strong> document";
+
+        document.write("hello!!");
+
+        // window는 생략가능
+        window.alert("hello world alert!");
+        window.prompt("hello world prompt");
+        window.confirm("hello world confirm");
+
+        console.log("hello world console");
+        console.error("hello world console");
+        console.error([
+            {
+                "1": "one",
+                "2": "two"
+            },
+            {
+                "1": "three",
+                "2": "four"
+            },
+        ])
+        console.table([
+            {
+                "1": "one",
+                "2": "two"
+            },
+            {
+                "1": "three",
+                "2": "four"
+            },
+            {
+                "3": "five",
+                "4": "six"
+            },
+        ])
+        console.log([
+            {
+                "1": "one",
+                "2": "two"
+            },
+            {
+                "1": "three",
+                "2": "four"
+            },
+        ])
+    </script>
+</body>
+
+</html>
