@@ -44,16 +44,19 @@
 
     document.write('<br><hr><br>');
 
+
+
     // 문제
     // 1번 : 저에게 3번째 직장이 생겼습니다. 직장이름은 위니브입니다. 데이터를 넣어주시고 아래와 같이 출력되게 해주세요.
     // 출력결과 : 제 세번째 직장은 위니브 입니다.
     person.이력.세번째직장 = '위니브';
-    // person.이력 = {'세번째직장' : '위니브'};
     document.write(`제 이력은 ${person.이력.첫번째직장} 입니다. <br>`);
     document.write(`제 이력은 ${person.이력.두번째직장} 입니다. <br>`);
     document.write(`제 세번째 직장은 ${person.이력.세번째직장} 입니다 <br>`);
 
     document.write('<br><hr><br>');
+
+
 
     // 문제2
     // 이호준의 세번째 직장에 두번째 직책을 출력해주세요.
@@ -72,7 +75,7 @@
           '부서': '경영지원',
           '직책': '대표',
         },
-        '세번째직장': {
+        '세번째 직장': {
           '회사이름': 'SINHUN',
           '부서': '경영지원',
           '직책': {
@@ -82,7 +85,9 @@
         },
       },
     }
-    document.write(`이호준의 세번째 직장에 두번째 직책은 '${이호준상세정보.이력.세번째직장.직책.두번째직책}' 입니다`);
+    document.write(`이호준의 세번째 직장에 두번째 직책은 '${이호준상세정보.이력['세번째 직장'].직책.두번째직책}' 입니다`);
+
+
 
     let txt = 'hello';
     let txt2 = {
@@ -96,17 +101,21 @@
     console.log(txt);
     console.log(txt2);
     console.log(txt[1]);
+    console.log(txt['1']);
     // console.log(txt.1);
     console.log(txt2[1]);
+
     // 이거 2개를 해줄 수 있는게 map
     // console.log(txt2.1);
     // console.log(txt2.{'one':'1'});
+
     console.log(String(10));
     console.log('1234'.replace('23', '99'));
 
     console.log(Object.keys(person));
     console.log(Object.values(person));
     console.log(Object.entries(person));
+    console.log(typeof Object.entries(person));
 
     //why? 이결 해결하기 위해 나온것이 map!!
     // console.log(person.keys);
